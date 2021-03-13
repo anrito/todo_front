@@ -15,11 +15,16 @@
 } */
 
 .content-section {
-    min-width: 700px;
     margin-top: 15px;
     background-color: rgb(206, 206, 206);
     min-height: 80vh;
     border-radius: 30px;
+    width:72%;
+}
+
+.main_body{
+    display: flex;
+    background-color: #F0F0F0;
 }
 
 .recent-tasks {
@@ -85,10 +90,9 @@
 header {
     display: flex;
     justify-content: space-evenly;  
-    background-color: #fff;
+    background-color:#F0F0F0;
     border-radius: 10px;
    
-  
 }
 
 /* Header-Calendar */
@@ -148,4 +152,14 @@ header {
     width: 28px;
     color: gray;
     padding-right: 10px;
+}
+
+.left_bar{
+    width:18%;
+    height:50px; 
+}
+
+.bar_header{
+    font-size:40px;
+    margin-left:50px;
 }
