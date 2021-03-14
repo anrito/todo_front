@@ -10,12 +10,6 @@ const Header = () => {
         <div>
             <header>
 
-                <div className="calendar">
-                    <form action="#">
-                        <label for="date">Date:</label>
-                        <input type="date" id="date" name="date" />
-                    </form>
-                </div>
 
 
                 <div className="search">
