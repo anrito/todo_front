@@ -14,12 +14,86 @@
     align-items: center;
 } */
 
-.content-section {
+.section {
     margin-top: 15px;
     background-color: rgb(206, 206, 206);
     min-height: 80vh;
     border-radius: 30px;
     width:72%;
+}
+
+.task-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.content-cont {
+    width: 72%;
+    margin: 0 auto;
+}
+
+.arrow-down {
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content-cont h3 {
+    display: flex;
+    justify-content: flex-start;
+}
+.content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    width: 1000px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    margin-top: 30px;
+}
+
+.content-time {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.content-title {
+
+    margin-left: 15px;
+    max-width: 100%;
+}
+
+.icon {
+    margin-top: 4px;
+}
+
+.btn {
+    background-color: rgb(45, 128, 236);
+    color: white;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.completed {
+    margin-top: 25px;
+}
+
+.drop-btn {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    outline: none;
 }
 
 .main_body{
@@ -32,56 +106,13 @@
     justify-content: space-between;
     margin: 25px 25px 40px 25px;
     padding: 25px;
+    
 }
 
 .header-text h2 {
     margin-bottom: 10px;
 }
 
-.task-btn {
-    border: 0;
-    padding: 10px 20px;
-    border-radius: 30px;
-    color: white;
-    background-color: rgb(60, 35, 141);
-}
-
-
-/* .content-container {
-    min-width: 700px;
-} */
-
-
-.single-content {
-    max-width: 350px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.cont-notification {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-
-/* GRID */
-
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    /* background-color: #2196F3; */
-    padding: 10px;
-
-    justify-content: space-around;
-  }
-  .grid-item {
-    padding: 20px;
-  }
-
-  /* GRID END */
 
 
 header {
@@ -89,7 +120,6 @@ header {
     justify-content: space-evenly;  
     background-color:#F0F0F0;
     border-radius: 10px;
-   
 }
 
 /* Header-Calendar   */
