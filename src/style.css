@@ -183,4 +183,37 @@ header {
 .bar_header{
     font-size:40px;
     margin-left:50px;
+   
 }
+
+.bar_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75vh;
+    
+
+ 
+
+}
+
+.bar_content svg {
+    width: 50px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.bar_content_tasks {
+    display: flex;
+    
+}
+.bar_content_tasks ul {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    list-style-type: none;
+
+}
+.bar_content_tasks ul li svg {
+    width: 20px;
+}
+
