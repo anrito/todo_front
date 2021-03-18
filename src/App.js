@@ -44,7 +44,7 @@ function App() {
     <div>
       { log && <TestLog apiCall={apiCall} />}
       { showCont && <Header data={data} />}
-      <div class="main_body">
+      <div className="main_body">
         {showCont && <Left_bar />}
         {showCont && <Content />}
       </div>
