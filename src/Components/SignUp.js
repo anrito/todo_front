@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const SignUp = () => {
@@ -67,6 +68,8 @@ const SignUp = () => {
                         <input type="checkbox" />
                         <p>I have read and agree to the <a href="#">Terms of Service</a></p>
                     </div>
+
+                    <Link to="/">Go Back</Link>
                 </form>
             </div>
 

@@ -1,12 +1,11 @@
 
 import React, { useState } from 'react';
-
-
-const LogIn = ({ apiCall }) => {
+import { Link  } from 'react-router-dom';
+const LogIn = ({ apiCall, setLog }) => {
 
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
-
+    
 
     return (
         <div>
@@ -30,7 +29,8 @@ const LogIn = ({ apiCall }) => {
                             e.preventDefault();
                             apiCall({ userName, password });
                         }} type="submit" className="btn btn-full log-in" href="#" >Sign in</button>
-                        <a className="btn sign-up" href="#">Sign up</a>
+                        
+                            <Link to="/signup" className="btn sign-up">Sign up</Link>
                     </div>
 
 
