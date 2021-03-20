@@ -1,7 +1,9 @@
 
 import React, { useState } from 'react';
 import { Link  } from 'react-router-dom';
-const LogIn = ({ apiCall, setLog }) => {
+
+
+const LogIn = ({ apiCall }) => {
 
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
@@ -41,4 +43,4 @@ const LogIn = ({ apiCall, setLog }) => {
     )
 }
 
-export default LogIn
+export default LogIn;

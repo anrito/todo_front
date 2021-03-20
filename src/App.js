@@ -39,8 +39,8 @@ function App() {
         const result = await response.json();
         console.log(result)
         setData(result.user)
-        setShowCont(true);
         setIsLoading(false)
+        setShowCont(true);
       } else {
         alert('Username or Password is emply')
         setIsLoading(false);
@@ -55,22 +55,25 @@ function App() {
 
 
   return (
-    <div>
-      <Switch>
-      <Route path="/signup" component={SignUp}/>
+    <>
+    <Switch>
+      
+      <Route path="/signup" component={SignUp}></Route>
       
       {isLoading && <Loading />}
   
-      { log && <SignIn setLog={setLog} apiCall={apiCall} />}
+      { log && <SignIn apiCall={apiCall} />}
 
-      
-      { showCont && <Header data={data} />}
-      <div className="main_body">
-        {showCont && <Left_bar />}
-        {showCont && <Content />}
-      </div>
       </Switch>
-    </div>
+      { showCont && <Header data={data} />}
+      
+        <div className="main_body">
+            {showCont && <Left_bar />}
+            {showCont && <Content />}
+        </div>
+      
+    
+    </>
   );
 }
 
