@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Content from './Components/Content';
 import Header from './Components/Header';
 import Left_bar from './Components/Left_bar';
-import TestLog from './Components/TestLog';
+import LogIn from './Components/LogIn';
 
 function App() {
   const [showCont, setShowCont] = useState(false);
@@ -26,7 +26,7 @@ function App() {
     };
 
     try {
-      const response = await fetch("https://1da313a35bfd.ngrok.io/user/login", requestOptions)
+      const response = await fetch("https://api-nodejs-todolist.herokuapp.com/user/login", requestOptions)
       const result = await response.json();
       console.log(result)
       setData(result.user)
@@ -42,7 +42,7 @@ function App() {
   return (
 
     <div>
-      { log && <TestLog apiCall={apiCall} />}
+      { log && <LogIn apiCall={apiCall} />}
       { showCont && <Header data={data} />}
       <div className="main_body">
         {showCont && <Left_bar />}
