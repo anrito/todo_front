@@ -12,7 +12,7 @@ const LogIn = ({ apiCall }) => {
         <div>
             <div className="container ">
                 <form className="form" id="form">
-                    <h1>Log In</h1>
+                    <h1>Sign In</h1>
 
                     <div className="form-control ">
                         <input type="text" id="email" placeholder="Email Address" onChange={e => setUserName(e.target.value)}></input>
@@ -29,7 +29,7 @@ const LogIn = ({ apiCall }) => {
                         <button onClick={(e) => {
                             e.preventDefault();
                             apiCall({ userName, password });
-                        }} type="submit" className="btn btn-full log-in" href="#" >Log in</button>
+                        }} type="submit" className="btn btn-full log-in" href="#" >Sign in</button>
                         <a className="btn sign-up" href="#">Sign up</a>
                     </div>
 

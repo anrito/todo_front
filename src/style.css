@@ -240,8 +240,7 @@ header {
 }
 
 
-/* Log In */
-
+/* Log In - above this line */
 :root{
     --success--:#23cc71;
     --error--:#dd1c26;
@@ -360,6 +359,7 @@ h1{
     
     
 }
+/* Log In - above this line */
 
 
 /* SPINNER LOADING */
@@ -447,3 +447,126 @@ lds-spinner {
   }
 
 /* SPINNER LOADING END */
+
+
+
+
+
+
+/* Sign Up - below this line */
+
+/*signup page*/
+.signUp {
+  width: 600px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.signUp .signUp-header h1 {
+  font-size: 2.7rem;
+  color: #5e77ed;
+  font-weight: 400;
+}
+
+.signUp .signUp-header p {
+  color: #616364;
+}
+
+.signUp .signUp-header p a {
+  text-decoration: underline;
+  color: #98a9f0;
+}
+
+.signUp form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signUp form .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signUp form .name input {
+  width: 48%;
+}
+
+.signUp form input {
+  outline: none;
+  border: none;
+  padding: 18px;
+  border-radius: 10px;
+  margin: 18px 0px;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  width: 100%;
+}
+
+.signUp form input:focus {
+  border: 1px solid  #98a9f0;
+}
+
+.signUp form button {
+  outline: none;
+  border: none;
+  background-color: #5e77ed;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  color: #fff;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  cursor: pointer;
+}
+
+.signUp form button:hover {
+  border: 2px solid #98a9f0;
+  background-color: #f1f4f6;
+  color: #000;
+}
+
+.signUp form .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signUp form .checkbox input {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.signUp form .checkbox p {
+  color: #616364;
+}
+
+.signUp form .checkbox p a {
+  color: #98a9f0;
+}
+
+
+
+/* Sign Up - above this line */
