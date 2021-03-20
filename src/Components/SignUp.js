@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-
 const SignUp = () => {
 
 
@@ -9,7 +7,7 @@ const SignUp = () => {
     const [age, setAge] = useState('');
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
-
+    const [token, setToken] = useState('');
     const userRegAPI = async () => {
         const myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
@@ -33,9 +31,15 @@ const SignUp = () => {
                 const response = await fetch("https://api-nodejs-todolist.herokuapp.com/user/register", requestOptions)
                 const result = await response.json();
                 console.log(result)
+                setToken(result.token);
+                
             }else {
                 alert('Fill Fields!!');
             }
+            if(token !== '') {
+                alert("Registration successful, Please Sign In");
+            }
+
         } catch (error) {
             console.log(error)
 
@@ -55,9 +59,9 @@ const SignUp = () => {
             <div className="signUp">
                 <div className="signUp-header">
                     <h1>Create account</h1>
-                    <p>Already have an account? <a href="log in.html">Sign in</a></p>
+                    <p>Already have an account? <a href="login.html">Sign in</a></p>
                 </div>
-                <form action="">
+                <form >
                     <div className="name">
                         <input type="text" placeholder="Full name" onChange={e => setFullName(e.target.value)} ></input>
                         <input type="number" placeholder="Age" onChange={e => setAge(e.target.value)} ></input>
