@@ -8,6 +8,8 @@ function App() {
   const [showCont, setShowCont] = useState(false);
   const [data, setData] = useState({});
   const [log, setLog] = useState(true);
+
+
   const apiCall = async ({userName, password}) => {
 
     const myHeaders = new Headers();
@@ -28,7 +30,7 @@ function App() {
    try {
     const response = await fetch("https://api-nodejs-todolist.herokuapp.com/user/login", requestOptions)
     const result = await response.json();
-    console.log(response)
+    console.log(result)
     setData(result.user)
     setShowCont(true);
     setLog(false)
